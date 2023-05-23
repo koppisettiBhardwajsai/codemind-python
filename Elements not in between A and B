@@ -1,0 +1,11 @@
+n=int(input())
+a=list(map(int,input().split()))
+z,x=map(int,input().split())
+for i in a:
+    if i<z or i>x:
+        print(i,end=" ")
+        s+=1
+    else:
+        continue
+if s==0:
+    print("-1")
