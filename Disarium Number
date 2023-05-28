@@ -1,0 +1,13 @@
+def is_disarium_number(num):
+    str_num = str(num)
+    n = len(str_num)
+    sum_digits = 0
+    for i in range(n):
+        digit = int(str_num[i])
+        sum_digits += digit ** (i + 1)
+    return sum_digits == num
+number = int(input())
+if is_disarium_number(number):
+    print(True)
+else:
+    print(False)
