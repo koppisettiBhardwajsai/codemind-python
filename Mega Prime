@@ -1,0 +1,23 @@
+def prime(n):
+    c=0
+    for i in range(2,n//2+1):
+        if n%i==0:
+            print("Not a Mega Prime")
+            break
+        
+    else:
+        return(True)
+a=int(input())
+if prime(a):
+    s=1
+    while a>0:
+        rem=a%10
+        if prime(rem):
+            s=1
+        else:
+            s=0
+            print("Not a Mega Prime")
+            break
+        a//=10
+    if s:
+        print("Mega Prime")
